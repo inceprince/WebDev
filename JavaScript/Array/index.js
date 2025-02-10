@@ -1,30 +1,30 @@
-// const arr = [2,35,1,8,9,"rohit",true,8];
-// console.log(arr[1]);
-// console.log(arr.at(-2));
-// // at is latest, negative index le leta hai
-// console.log(arr.length);
+const arr = [2,35,1,8,9,"rohit",true,8];
+console.log(arr[1]);
+console.log(arr.at(-2));
+// at is latest, negative index le leta hai
+console.log(arr.length);
 // // length
 // // helpful
-// const newarr = structuredClone(arr);
-// console.log(newarr==arr);
+const newarr = structuredClone(arr);
+console.log(newarr==arr);
 
 // push-add element at end
 
-// arr.push(30);
-// arr.push(50);
-// console.log(arr);
+arr.push(30);
+arr.push(50);
+console.log(arr);
 
 // // pop - pop the last element from array
-// arr.pop();
-// arr.pop();
-// arr.pop();
-// console.log(arr);
+arr.pop();
+arr.pop();
+arr.pop();
+console.log(arr);
 
 // // unshift-add element at start
 
-// arr.unshift(10);
-// arr.unshift(30);
-// console.log(arr);
+arr.unshift(10);
+arr.unshift(30);
+console.log(arr);
 
 // // shift-delete element from start
 // // [2,35,1,8,9,"rohit"];
@@ -75,12 +75,12 @@
 
 // 2d array
 
-// let arr2d = [[1,2,3],[4,5,6],[7,8,9]];
-// console.log(arr2d);
-// console.log(arr2d[2][1]);
-// let arr2d = [[1,2,3,[23,432,123,[331,123,123]]],[4,5,6],[7,8,9]];//3d array
-// flat ka use to convert into 1d array
-// let newarr = arr2d.flat(3);
+let arr2d = [[1,2,3],[4,5,6],[7,8,9]];
+console.log(arr2d);
+console.log(arr2d[2][1]);
+let arr2d = [[1,2,3,[23,432,123,[331,123,123]]],[4,5,6],[7,8,9]];//3d array
+flat ka use to convert into 1d array
+let newarr = arr2d.flat(3);
 
 // console.log(newarr);
 
