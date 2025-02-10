@@ -9,7 +9,7 @@ I am continuously improving my skills and will keep updating this repository wit
 
 If you're interested in collaborating or have any suggestions, feel free to connect with me:
 
-LinkedIn: https:prince-singh-73450a2a3
+LinkedIn: https://www.linkedin.com/in/prince-singh-73450a2a3/
 
 Twitter: https://x.com/prin4382
 
