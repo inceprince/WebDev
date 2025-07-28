@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+    <script src="first.js"defer></script>
+    <style>
+        *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.box{
+    min-width: 100px;
+    min-height: 100px;
+    padding: 5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+#grandParent{
+    background: #b1d4e0;
+    color: black;
+}
+#parent{
+    background: #145da0;
+}
+#child{
+    background: #0c2d48;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <div id="grandParent" class="box">
+            grandParent
+            <div id="parent" class="box">
+              parent
+                <div id="child" class="box">child</div>
+            </div>
+        </div>
+
+    </main>
+    
+   
+
+
+
+
+</body>
+</html>

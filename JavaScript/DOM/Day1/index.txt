@@ -1,0 +1,44 @@
+->What is the DOM in JavaScript?
+The Document Object Model (DOM) is a programming interface for web documents. It represents the HTML page as an object, allowing JavaScript to interact with and modify the webpage dynamically.
+.....................................................................................................................................................
+
+->How Does HTML Convert to the DOM?
+
+:When the browser loads an HTML document, it parses the HTML code.
+:It then creates a structured representation of the document in the form of a DOM tree.
+:This tree structure consists of nodes, where each element, attribute, and text in the HTML becomes a part of the DOM.
+:When the browser loads an HTML page, it parses the HTML and creates a corresponding JavaScript object for each element. These objects form a structured tree, known as the DOM Tree.
+:The document object in JavaScript is the entry point to this DOM, allowing us to manipulate the page.
+
+.....................................................................................................................................................
+
+Example: HTML to DOM Tree
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Tree Example</title>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>This is a paragraph.</p>
+</body>
+</html>
+This will be represented as a DOM tree like this:
+document
+ ├── html
+ │    ├── head
+ │    │    ├── title
+ │    │         └── "DOM Tree Example"
+ │    ├── body
+ │         ├── h1
+ │         │    └── "Hello World"
+ │         ├── p
+ │              └── "This is a paragraph."
+->document is the root node.
+->html is its child node.
+->Inside html, we have head and body as child nodes.
+->h1 and p are child nodes of body.
+->The text inside h1 and p are text nodes.
+
+.....................................................................................................................................................

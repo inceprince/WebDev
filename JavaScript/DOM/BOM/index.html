@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browser Events Demo</title>
+    <style>
+        body {
+            height: 2000px; /* To enable scrolling */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        #resizeInfo {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Browser Events in JavaScript (BOM)</h1>
+    <p>Resize the window, scroll the page, or try to leave the page to see events in action.</p>
+    
+    <p id="resizeInfo"></p>
+
+    <script>
+        // 1. Load Event - Fires when the full page (including images, styles) is loaded
+        window.addEventListener("load", function () {
+            console.log("✅ Page fully loaded!");
+            alert("Page has been fully loaded!");
+        });
+
+        // 2. DOMContentLoaded Event - Fires when only HTML is loaded, before images
+        document.addEventListener("DOMContentLoaded", function () {
+            console.log("✅ HTML content is loaded!");
+        });
+
+        // 3. Resize Event - Detects when window size changes
+        window.addEventListener("resize", function () {
+            let width = window.innerWidth;
+            let height = window.innerHeight;
+            document.getElementById("resizeInfo").innerText = `Window Size: ${width} x ${height}`;
+            console.log(`✅ Window resized: ${width} x ${height}`);
+        });
+
+        // 4. Scroll Event - Detects scrolling
+        window.addEventListener("scroll", function () {
+            console.log(`✅ Scrolled! Scroll position: ${window.scrollY}px`);
+        });
+
+        // 5. BeforeUnload Event - Asks for confirmation before leaving
+        window.addEventListener("beforeunload", function (e) {
+            e.preventDefault();
+            e.returnValue = ''; // Required for some browsers
+        });
+
+        // 6. Error Event - Captures script errors
+        window.addEventListener("error", function (e) {
+            console.error(`❌ Error occurred: ${e.message} at ${e.filename}:${e.lineno}`);
+        });
+
+    </script>
+
+</body>
+</html>
