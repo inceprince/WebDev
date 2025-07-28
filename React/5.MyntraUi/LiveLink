@@ -1,0 +1,33 @@
+# 🛍️ Fashion Web Clone (React)
+
+A modern and responsive fashion e-commerce website clone built using **React.js**. Designed for learning, practice, and portfolio building.
+
+🌐 **Live Demo**: [https://fashion-web-clone.netlify.app/](https://fashion-web-clone.netlify.app/)
+
+---
+
+## ✨ Features
+
+- 🔥 Responsive UI for mobile, tablet, and desktop
+- 🧥 Product categories and banners
+- 🧭 Clean and smooth navigation bar
+- 🎨 Styled with modern CSS (or Tailwind if used)
+- ⚛️ Built using functional components and React best practices
+
+---
+
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js
+- **Styling:** CSS3 *
+- **Hosting:** Netlify
+
+---
+
+## 📦 Installation (Run Locally)
+
+```bash
+
+npm install
+npm start
+npx parcel index.html
