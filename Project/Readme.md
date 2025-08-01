@@ -4,7 +4,7 @@ Welcome to my project repository! This repo includes **mini projects** organized
 
 ---
 
-## 📁 Project Structure
+## 📁 Project Structure  
 
 ### 🚀 Major Projects (By MERN Stack Component)
 Each major project covers deep understanding of a single stack component.
